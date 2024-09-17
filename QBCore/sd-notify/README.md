@@ -1,5 +1,6 @@
+____________________________________________________________________________________________
 Client-side usage:
-
+____________________________________________________________________________________________
 -- Using exports
 
 exports['sd-notify']:NotifySuccess('Operation completed successfully!', 'Success')
@@ -9,7 +10,7 @@ exports['sd-notify']:NotifyWarning('You are running low on fuel.', 'Vehicle Warn
 exports['sd-notify']:NotifyInfo('The store will close in 5 minutes.', 'Store Info')
 
 exports['sd-notify']:NotifyError('Failed to connect to the server.', 'Connection Error')
-
+____________________________________________________________________________________________
 -- Using events
 
 TriggerEvent('sd-notify:client:NotifySuccess', 'Operation completed successfully!', 'Success')
@@ -19,8 +20,9 @@ TriggerEvent('sd-notify:client:NotifyWarning', 'You are running low on fuel.', '
 TriggerEvent('sd-notify:client:NotifyInfo', 'The store will close in 5 minutes.', 'Store Info')
 
 TriggerEvent('sd-notify:client:NotifyError', 'Failed to connect to the server.', 'Connection Error')
-
+____________________________________________________________________________________________
 Server-side usage:
+____________________________________________________________________________________________
 
 -- Using exports
 
@@ -31,7 +33,7 @@ exports['sd-notify']:NotifyPlayerWarning(source, 'Your vehicle is about to explo
 exports['sd-notify']:NotifyPlayerInfo(source, 'A new event is starting soon.', 'Event Info')
 
 exports['sd-notify']:NotifyPlayerError(source, 'Transaction failed.', 'Bank Error')
-
+____________________________________________________________________________________________
 -- Using events
 
 TriggerEvent('sd-notify:server:NotifyPlayerSuccess', source, 'You won the lottery!', 'Congratulations')
