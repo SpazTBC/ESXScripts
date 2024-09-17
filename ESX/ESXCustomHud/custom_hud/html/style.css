@@ -1,0 +1,149 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#hud {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#player-id-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 15px;
+    border-radius: 25px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: right;
+}
+
+#player-id-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#player-id-wrapper i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #ffffff;
+}
+
+#player-finance-info {
+    position: absolute;
+    top: 100px; /* Increased from 80px to 100px */
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.player-info-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.player-info-item:last-child {
+    margin-bottom: 0;
+}
+
+.player-info-item i {
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.player-info-label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+#server-abbreviation {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#player-id {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+#player-cash {
+    color: #32cd32;
+}
+
+#player-bank {
+    color: #4169e1;
+}
+
+/* Hover effect */
+#player-black-money {
+    color: #8b0000;
+}
+
+/* Add this to the existing hover effect */
+.player-info-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 5px;
+    color: white;
+}
+
+span {
+    color: white;
+    font-size: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Color the heart icon red and shield icon blue */
+.fa-heart {
+    color: #ff4d4d;
+}
+
+.fa-shield-alt {
+    color: #4d79ff;
+}
+
+/* Add colors for hunger and thirst icons */
+.fa-hamburger {
+    color: #ffa500;
+}
+
+.fa-tint {
+    color: #00bfff;
+}
+
+.fa-running {
+    color: #7fff00;
+}

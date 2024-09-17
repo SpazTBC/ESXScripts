@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom HUD</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="hud">
+        <div class="icon-container">
+            <i class="fas fa-heart icon"></i>
+            <span id="health-value"></span>
+        </div>
+        <div class="icon-container">
+            <i class="fas fa-shield-alt icon"></i>
+            <span id="armor-value"></span>
+        </div>
+        <div id="extra-armor-icon" class="icon-container hidden">
+            <i class="fas fa-shield-alt icon"></i>
+        </div>
+        <div class="icon-container">
+            <i id="hunger-icon" class="fas fa-hamburger icon"></i>
+            <span id="hunger-value"></span>
+        </div>
+        <div class="icon-container">
+            <i id="thirst-icon" class="fas fa-tint icon"></i>
+            <span id="thirst-value"></span>
+        </div>
+        <div class="icon-container">
+            <i id="stamina-icon" class="fas fa-running icon"></i>
+            <span id="stamina-value"></span>
+        </div>
+    </div>
+
+    <div id="player-info">
+        <div id="player-id-container">
+            <span id="server-abbreviation"></span>
+            <div id="player-id-wrapper">
+                <i class="fas fa-user-circle"></i>
+                <span id="player-id">ID:</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="player-finance-info">
+        <div class="player-info-item">
+            <i class="fas fa-wallet"></i>
+            <span class="player-info-label">Cash:</span>
+            <span id="player-cash"></span>
+        </div>
+        <div class="player-info-item">
+            <i class="fas fa-piggy-bank"></i>
+            <span class="player-info-label">Bank:</span>
+            <span id="player-bank"></span>
+        </div>
+        <div class="player-info-item">
+            <i class="fas fa-skull-crossbones"></i>
+            <span class="player-info-label">Black Money:</span>
+            <span id="player-black-money"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
